@@ -1,0 +1,12 @@
+$Sky: white;
+// Mixins
+@mixin flex-Display(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// Breakpoints
+$small-screen: 600px;
+$medium-screen: 800px;
+$large-screen: 1200px;
