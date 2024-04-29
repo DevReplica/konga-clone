@@ -42,6 +42,7 @@ body .myGrid-container {
 }
 body .Myitems {
   width: 100%;
+  padding: 0 15px;
 }
 body .myHeader {
   display: none;
@@ -60,6 +61,7 @@ body .Nivea_Banner {
 }
 body .grid {
   width: 100%;
+  padding: 0 15px;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   text-align: center;
@@ -69,6 +71,7 @@ body .grid {
 }
 body .grid2 {
   width: 100%;
+  padding: 0 15px;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   text-align: center;
@@ -399,8 +402,8 @@ body img {
 }
 
 .myDeals {
-  width: 98%;
-  margin: auto;
+  width: 100%;
+  padding: 0 15px;
   background-image: repeating-radial-gradient(brown 80%, red);
   padding: 0 10px;
   border-top-right-radius: 5px;
@@ -417,8 +420,8 @@ body img {
 }
 
 section .secGrid {
-  width: 98%;
-  margin: auto;
+  width: 100%;
+  padding: 0 15px;
   display: grid;
   text-align: center;
   grid-template-columns: repeat(3, 1fr);
@@ -434,11 +437,10 @@ section .secGrid .myitems:hover {
   box-shadow: 1px 5px 5px gray;
 }
 section .secGrid2 {
-  width: 98%;
-  margin: auto;
+  width: 100%;
+  padding: 0 15px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
 }
 section .items {
   border-radius: 10px;
@@ -453,30 +455,29 @@ section .Store {
   font-weight: 550;
 }
 section .secGrid3 {
-  width: 98%;
-  margin: auto;
+  width: 100%;
+  padding: 0 15px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
 }
 
 .thirdSection {
-  width: 98%;
-  margin: auto;
+  width: 100%;
+  padding: 0 15px;
   border-radius: 5px;
   border-radius: 1px solid black;
 }
 .thirdSection .thirdSecDiv {
-  width: 98%;
-  margin: auto;
-  padding: 7px 0;
+  width: 100%;
+  padding: 7px 15px;
   border: 1px solid white;
-  box-shadow: 1px 2px 30px gray;
+  box-shadow: 1px 2px 20px gray;
   border-radius: 10px;
 }
 .thirdSection .grid3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  gap: 8px;
   background-color: white;
 }
 .thirdSection .grid3 img {
@@ -484,38 +485,54 @@ section .secGrid3 {
 }
 
 .fourthSection {
-  width: 97%;
-  margin: auto;
+  width: 100%;
+  padding: 0 15px;
 }
 .fourthSection .links {
   color: #A9054D;
   font-size: 13px;
+  font-weight: 600;
 }
 .fourthSection .fourthSecItems {
   border: none;
 }
 
+.myContainer .myContainer {
+  max-width: 100%;
+  margin: auto;
+  height: 20vh;
+  margin: 40px 0;
+  padding: 10px;
+}
+@media (max-width: 1023px) {
+  .myContainer .secGrid3 {
+    width: 90vw;
+    overflow-x: scroll;
+    display: flex;
+  }
+  .myContainer .secGrid2 {
+    width: 90vw;
+    display: flex;
+    overflow-x: scroll;
+  }
+}
 @media (max-width: 800px) {
-  body .secondHeader {
+  .myContainer body .secondHeader {
     display: none;
   }
-  body .myHeader {
+  .myContainer body .myHeader {
     display: grid;
   }
-  body .grid-Wrapper {
-    display: block !important;
-  }
-  body .secGrid {
+  .myContainer body .secGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  body .secGrid2 {
+  .myContainer body .secGrid2 {
     display: grid;
-    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 550px) {
-  body .secGrid {
+  .myContainer body .secGrid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }

@@ -9,9 +9,6 @@ body{
   .myImage{
     width: 50%;
 }
-*{
-  // border: 1px solid red;
-}
 .myBar{
     font-size: 30px;
 }
@@ -46,6 +43,8 @@ button{
 }
 .Myitems{
     width: 100%;
+    padding: 0 15px;
+
 } 
   .myHeader{
     display: none;
@@ -64,6 +63,8 @@ button{
     }
     .grid{
         width: 100%;
+        padding: 0 15px;
+
           display: grid;
           grid-template-columns: repeat(8, 1fr);
           text-align: center;
@@ -73,6 +74,7 @@ button{
       }
       .grid2{
           width: 100%;
+          padding: 0 15px;
           display: grid;
           grid-template-columns: repeat(10, 1fr);
           text-align: center;
@@ -426,8 +428,8 @@ button{
   }
 }
 .myDeals{
-  width: 98%;
-  margin: auto;
+  width: 100%;
+  padding: 0 15px;
   background-image: repeating-radial-gradient(brown 80%, red);
   padding: 0 10px;
   border-top-right-radius: 5px;
@@ -444,8 +446,8 @@ button{
 }
 section{
   .secGrid{
-    width: 98%;
-    margin: auto;
+    width: 100%;
+    padding: 0 15px;
     display: grid;
     text-align: center;
     grid-template-columns: repeat(3, 1fr);
@@ -461,11 +463,10 @@ section{
     }
   }
   .secGrid2{
-    width: 98%;
-    margin: auto;
+    width: 100%;
+    padding: 0 15px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
   }
   .items{
     border-radius: 10px;
@@ -484,30 +485,31 @@ section{
     // overflow-x: scroll;
     // margin: auto;
     // display: flex;
+    width: 100%;
+    padding: 0 15px;
     display: grid;
-    grid-template-columns: repeat(auto-fill,250px);
-    place-content: center;
+    grid-template-columns: repeat(6, 1fr);
+    // place-content: center;
   
-    gap: 20px;
+    // gap: 20px;
   }
 }
 .thirdSection{
   .thirdSecDiv{
-    width: 98%;
-    margin: auto;
-    padding: 7px 0;
+    width: 100%;
+    padding: 7px 15px;
     border: 1px solid white;
-    box-shadow: 1px 2px 30px gray;
+    box-shadow: 1px 2px 20px gray;
     border-radius: 10px;
   }
-  width: 98%;
-  margin: auto;
+  width: 100%;
+    padding: 0 15px;
   border-radius: 5px;
   border-radius: 1px solid black;
   .grid3{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    gap: 8px;
     background-color: white;
     img{
       border-radius: 10px;
@@ -515,16 +517,27 @@ section{
   }
 }
 .fourthSection{
-  width: 97%;
-  margin: auto;
+  width: 100%;
+  padding: 0 15px;
+
   .links{
     color: #A9054D;
     font-size: 13px;
+    font-weight: 600 ;
   }
   .fourthSecItems{
     border: none;
   }
 }
+.myContainer{
+  .myContainer{
+    max-width: 100%;
+    margin:  auto;
+    height: 20vh;
+    margin: 40px 0;
+    padding: 10px;
+}
+
 
 
       
@@ -560,7 +573,18 @@ section{
 
 
 
-
+@media (max-width: 1023px) {
+  .secGrid3{
+    width: 90vw;
+    overflow-x: scroll;
+    display: flex;
+  }
+  .secGrid2{
+    width: 90vw;
+    display: flex;
+    overflow-x: scroll;
+  }
+}
 @media (max-width: 800px) {
   body{
     .secondHeader{
@@ -569,17 +593,14 @@ section{
     .myHeader{
       display: grid;
     }
-    .grid-Wrapper{
-     display: block !important;
-    }
     .secGrid{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
     }
     .secGrid2{
       display: grid;
-      grid-template-columns: 1fr;
     }
+    
   }
 }
 @media (max-width: 550px) {
@@ -590,18 +611,4 @@ section{
     }
   }
 }
-.myContainer{
-  max-width: 95%;
-  margin: 0 auto;
-  height: 20vh;
-  margin: 40px 0;
-  // border-radius: 50px;
-// background: #e0e0e0;
-box-shadow:  20px 20px 60px #bebebe,
-             -20px -20px 60px #ffffff;
-  // box-shadow:3px 3px 3px grey;
-  img{
-    width: 100%;
-    height: 100%;
-  }
 }
