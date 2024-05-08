@@ -1,0 +1,115 @@
+@media (max-width: 1023px) {
+    .secGrid3{
+      width: 90vw;
+      overflow-x: scroll;
+      display: flex;
+    }
+    .secGrid2{
+      width: 90vw;
+      display: flex;
+      overflow-x: scroll;
+    }
+  }
+@media (max-width: 920px) {
+    .subScribe{
+      display: none;
+    }
+    .myFooter{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  @media (max-width: 910px) {
+    .secGrid{
+      .items{
+        .myCardBody{
+          .price{
+            display: block;
+            p{
+              display: inline;
+            }
+          }
+        }
+      }
+    }
+  }
+@media (max-width: 800px) {
+    body{
+      .secondHeader{
+         display: none;
+        }
+      .secHeader{
+        display: grid;
+        a{
+          color: black;
+        }
+        }
+    }
+      .secGrid2{
+        display: grid;
+    }
+      .grid-Wrapper{
+        display: block !important;
+    }
+}
+@media (max-width: 610px) {
+  body{
+    .Footer{
+      display: none;
+    }
+    .secFooter{
+      display: flex;
+    }
+  }
+}
+ @media (max-width: 550px) {
+    body{
+      .secGrid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+  @media (max-width: 425px) {
+    .myGrid-container{
+      .Myitems{
+        width: 100%;
+        a{
+          font-size: 11px;
+          font-weight: 550;
+        }
+      }
+    }
+    .grid-Wrapper{
+      margin-top: 180px;
+      .carouselDiv{
+        height: 50%;
+      }
+    }
+  }
+  @media (max-width: 375px) {
+    .Myitems{
+      width: 70%;
+      margin: auto;
+    }
+  }
+  @media (max-width: 350px) {
+    .secHeader{
+      .myImage{
+        display: none;
+      }
+      .searchDiv{
+        .btnCarrier{
+          input{
+            width: 90% !important;
+            text-align: center;
+            // margin: auto;
+          }
+        }
+      }
+      .myGrid-container{
+        display: none !important;
+      }
+      
+    }
+  }

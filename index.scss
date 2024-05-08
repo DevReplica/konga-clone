@@ -5,7 +5,9 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 body{
+  width: 100%;
   .myImage{
     width: 50%;
 }
@@ -47,6 +49,8 @@ button{
 
 } 
   .myHeader{
+    width: 100%;
+    padding: 0 15px;
     display: none;
   }  
   p{
@@ -125,6 +129,7 @@ button{
             left: 20px;
             font-size: 14px;
             text-align: start;
+            z-index: 9;
           }
           #help-dropdown:hover .dropdown-content{
             display: block;
@@ -133,7 +138,6 @@ button{
             fill: white;
           }
           .dropdown-content a{
-            // color: black;
             padding: 12px 16px;
             text-decoration: none;
             display: block;
@@ -189,7 +193,6 @@ button{
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         padding: 0px 15px;
-        // height: 30px;
         align-items: center;
         .item .nav_links a{
           font-size: 14px;
@@ -209,7 +212,6 @@ button{
             }
             .nav_links:hover{
               background-color: #fff;
-              // height: 30px;
               a{
                 color: #000;
               }
@@ -242,7 +244,6 @@ button{
             width: 100%;
         }
         .contents{
-            // display: none;
             position: absolute;
             top: 30px;
             display: grid;
@@ -398,10 +399,10 @@ button{
     }
 
     .carouselSection{
-      padding: 12px;
+      margin-top: 14%;
+      padding: 0 12px;
       .grid-Wrapper{
         display: grid;
-        // height: 400px;
         grid-template-columns: 2.6fr 1.4fr;
         gap: 12px;
         .carouselDiv{
@@ -426,10 +427,14 @@ button{
       color: black;
     }
   }
+  .gridditems:hover{
+    box-shadow: 1px 5px 5px gray;
+  }
 }
 .myDeals{
-  width: 100%;
-  padding: 0 15px;
+  width: 98%;
+  margin: auto;
+  margin-bottom: 10px; 
   background-image: repeating-radial-gradient(brown 80%, red);
   padding: 0 10px;
   border-top-right-radius: 5px;
@@ -442,6 +447,13 @@ button{
     a:hover{
       text-decoration: underline;
     }
+  }
+}
+body{
+  .secondHeader{
+    position: fixed;
+    z-index: 9;
+    top: 0;
   }
 }
 section{
@@ -460,6 +472,55 @@ section{
     }
     .myitems:hover{
       box-shadow: 1px 5px 5px gray;
+    }
+    .price{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+  }
+  .mergedSection{
+    width: 100%;
+    padding: 0 15px;
+    .replica{
+      cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px; 
+        background-color: #FFE9E9;
+        padding: 10px 10px;
+        padding-right: 5em;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        div{
+          display: flex;
+          align-items: center;
+          gap: 2em;
+          h4{
+            font-weight: 600;
+          }
+          a{
+            color: #8B0552;
+          }
+          a:hover{
+            text-decoration: underline;
+          }
+        }
+        .myButton{
+          width: 100%;
+          color: #EE017F;
+          background-color: #FFDFDD;
+          text-align: center;
+          border-radius: 4px;
+        }
+    }
+    .overflow{
+      width: 200%;
+      display: flex;
+      gap: 1em;
+      overflow-x: scroll ;
+      border: 1px solid red;
+    
     }
   }
   .secGrid2{
@@ -481,20 +542,29 @@ section{
     font-weight: 550;
   }
   .secGrid3{
-    // width: 90vw;
-    // overflow-x: scroll;
-    // margin: auto;
-    // display: flex;
     width: 100%;
     padding: 0 15px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    // place-content: center;
-  
-    // gap: 20px;
+    .items:hover{
+      transform: scale(1.04);
+      transition: .3s;
+    }
   }
 }
 .thirdSection{
+  .babyAdDiv{
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 7px 15px;
+    box-shadow: 1px 2px 20px gray;
+    margin-bottom: 2%;
+    .kongaBabyAd{
+      width: 100%;
+      height: 10%;
+      border-radius: 5px;
+    }
+  }
   .thirdSecDiv{
     width: 100%;
     padding: 7px 15px;
@@ -536,79 +606,160 @@ section{
     height: 20vh;
     margin: 40px 0;
     padding: 10px;
-}
-
-
-
-      
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 1023px) {
-  .secGrid3{
-    width: 90vw;
-    overflow-x: scroll;
-    display: flex;
-  }
-  .secGrid2{
-    width: 90vw;
-    display: flex;
-    overflow-x: scroll;
   }
 }
-@media (max-width: 800px) {
-  body{
-    .secondHeader{
-       display: none;
+.fifthSection{
+  padding: 0 20px;
+  width: 100%;
+  div{
+    padding: 0 20px;
+    h4{
+      color: #5A5F66;
+      margin-top: 40px;
+    }
+    p{
+      font-size: 14.9px;
+      line-height: 25px;
+    }
+  }
+}
+.Footer{
+  width: 100%;
+  background-color: #0C0C0C;
+
+  .myFooter{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #2E2E2E;
+    .footerFlex{
+      display: flex;
+      gap: 9px;
+      padding-top: 15px;
+      p, a{
+        color: #B5B5B5;
       }
-    .myHeader{
-      display: grid;
-    }
-    .secGrid{
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-    .secGrid2{
-      display: grid;
-    }
-    
-  }
-}
-@media (max-width: 550px) {
-  body{
-    .secGrid{
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
+      i{
+        color: white;
+        font-size: large;
+      }
     }
   }
+  .footerGrid{
+    padding: 20px 15px;
+    display: grid;
+    grid-template-columns: 3.3fr 1.1fr;
+    .items{
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      .items1{
+        a{
+          display: block;
+          font-size: 14px;
+          color: #5A5F66;
+        }
+        a:hover{
+          color: #fff;
+        }
+      }
+    }
+    .wrapper{
+      display: flex;
+      gap: 15px;
+    }
+    p{
+      color: #B5B58F;
+      font-size: 15px;
+      font-weight: 550;
+    }
+    .ourConnect{
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .svgPacker{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  .lastPart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    .line1{
+      width: 38%;
+      border-top: 1px solid white;
+    }
+    .line2{
+      width: 38%;
+      border-top: 1px solid white;
+    }
+    .Copyright{
+      width: 24%;
+      font-size: 13px;
+    }
+  }
 }
+.secFooter{
+  width: 100%;
+  padding: 5px 30px;
+  display: flex;
+  justify-content: space-between;
+  display: none;
+  p{
+    color: #000;
+  }
+}
+body{
+  .secHeader{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+    z-index: 10;
+    background-color: #fff;
+    input{
+      width: 90%;
+      outline: none;
+      padding: 6px 0;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+      background-color: rgba(128, 128, 128, 0.309);
+      border: none;
+      font-size: 13px;
+    }
+    button{
+      width: 10%;
+      padding: 8px 0;
+      background-color: #FBA100;
+      border: none;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+    .btnCarrier{
+      display: flex;
+    }
+    .svg{
+      fill: white;
+    }
+  }
+  .Myitems{
+    width: 100%;
+  }
+}
+body{
+  .secFooter{
+    background-color: #fff;
+    width: 100%;
+    padding: 5px 30px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    display: none;
+    p{
+      color: #000;
+    }
+  }
 }
